@@ -1,0 +1,22 @@
+## .NET
+bin/
+obj/
+out/
+*.user
+*.suo
+.vs/
+TestResults/
+*.nupkg
+!**/*.nupkg
+
+## Publish output
+publish/
+
+## OS / editor
+.DS_Store
+Thumbs.db
+*~
+
+## Local secrets (never commit)
+*.pfx
+appsettings.*.json

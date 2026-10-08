@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net11.0</TargetFramework>
+    <AssemblyName>muse-led</AssemblyName>
+    <RootNamespace>Muse.Arduino.LedDisplay</RootNamespace>
+    <Version>0.1.0</Version>
+    <Description>Drives the 8x13 LED matrix on the Arduino VENTUNO Q from .NET 11, integrated with the Muse Gadget SDK.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/sirredbeard/muse-arduino-led-display</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Arduino.Led" Version="0.1.0" />
+    <PackageReference Include="Muse.Gadget.Sdk.Linux" Version="0.1.0" />
+    <PackageReference Include="System.IO.Ports" Version="10.0.0" />
+  </ItemGroup>
+
+</Project>

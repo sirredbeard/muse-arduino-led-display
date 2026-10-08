@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Muse.Arduino.LedDisplay/Muse.Arduino.LedDisplay.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Muse.Arduino.LedDisplay.Tests/Muse.Arduino.LedDisplay.Tests.csproj" />
+  </Folder>
+</Solution>

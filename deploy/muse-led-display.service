@@ -1,0 +1,17 @@
+[Unit]
+Description=Muse LED display service (VENTUNO Q 8x13 matrix)
+After=network.target
+
+[Service]
+Type=simple
+User=muse-led
+# The service account needs dialout (serial) and read access to the musegadget socket.
+SupplementaryGroups=dialout
+ExecStart=/opt/muse-led-display/muse-led watch /var/lib/muse-led-display/requests
+Restart=on-failure
+RestartSec=5
+# Give the MCU sketch time to boot after a power cycle.
+ExecStartPre=/bin/sleep 5
+
+[Install]
+WantedBy=multi-user.target
